@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
-import { SingleUser, User } from "../types/types";
+import { User } from "../types/types";
 
 const UserPage = () => {
   const { data, setData, loading, currentUser } = useInfiniteScroll();
@@ -110,7 +110,7 @@ const UserPage = () => {
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-7 border w-1200 border-gray-400 p-3">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-7 border w-1250 border-gray-400 p-3">
         {userInfo}
         <div className="lg:col-span-4 col-span-2 max-w-full">{history}</div>
         <h1 className="lg:col-span-4 col-span-2 font-extrabold text-4xl">
